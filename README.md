@@ -18,7 +18,7 @@ A Python project to track stock investments and portfolio value.
 Clone the repository:
 
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/lxa5if96/codeAlpha.git
 ```
 
 Run a project:
