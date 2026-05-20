@@ -8,7 +8,12 @@ guessLetter = []
 while wrongGuess <6 and "_" in blankSpace:
     print(blankSpace)
     print(6 - wrongGuess)
-    letter = input("guess the letter: ").lower()
+    try:
+        letter = input("guess the letter: ").lower()
+    except:
+        print("Please enter letter only!")
+        continue
+    
     if len(letter) != 1 or not letter.isalpha():
         print ("Enter One letter (a to z): ")
         continue
