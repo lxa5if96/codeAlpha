@@ -1,0 +1,7 @@
+AAPL- quantity:22- price per stock:180
+TSLA- quantity:33- price per stock:250
+MSFT- quantity:44- price per stock:420
+AMZN- quantity:55- price per stock:190
+GOOGL- quantity:21- price per stock:170
+----------------------------------------------------------------
+Total Investment: 44710
