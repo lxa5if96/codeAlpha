@@ -47,7 +47,7 @@ def save_file():
 
     with open("portfolio.txt","w") as file:
         for stock, data in portfolio.items():
-            file.write(f"{stock}- quantity:{data["quantity"]}- price per stock:{data["price"]}\n")
+            file.write(f"{stock}- quantity:{data['quantity']}- price per stock:{data['price']}\n")
         
         file.write("-----------------------------------------")
         file.write("\nTotal Investment: "+str(totalInvestment))
