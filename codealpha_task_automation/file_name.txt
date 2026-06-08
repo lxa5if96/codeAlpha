@@ -1,0 +1,9 @@
+Hello Team,
+
+Please contact us at support@example.com for general inquiries.
+
+For technical issues, email tech.help@company.org.
+
+You may also reach John at john.doe123@gmail.com or Sarah at sarah_wilson@university.edu.
+
+Thank you.
