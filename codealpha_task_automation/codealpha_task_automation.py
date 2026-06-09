@@ -1,19 +1,21 @@
+import os
 import re
 
-try:
-    with open("file_name.txt", "r") as file:
-        content = file.read()
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    emails = re.findall(
-        r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}',
-        content
-    )
+input_file = os.path.join(base_dir, "data.txt")
+output_file = os.path.join(base_dir, "email.txt")
 
-    with open("email.txt", "w") as file:
-        for email in emails:
-            file.write(email + "\n")
+with open(input_file, "r") as file:
+    content = file.read()
 
-    print("Email addresses extracted and saved to email.txt")
+emails = re.findall(
+    r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}',
+    content
+)
 
-except FileNotFoundError:
-    print("Input file not found. Please check the file name and location.")
+with open(output_file, "w") as file:
+    for email in emails:
+        file.write(email + "\n")
+
+print("Email addresses extracted and saved to email.txt")
